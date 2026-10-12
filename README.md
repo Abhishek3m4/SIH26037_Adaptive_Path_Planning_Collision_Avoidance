@@ -1,16 +1,16 @@
-<!-- Animated header -->
+<!-- ===================== AviX | Animated README ===================== -->
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=900&color=38BDF8&center=true&vCenter=true&width=850&lines=AviX+%7C+SIH+2026;Adaptive+Path+Planning;Collision+Avoidance+for+Indian+Roads" alt="AviX animated heading" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=30&pause=1000&color=38BDF8&center=true&vCenter=true&width=900&lines=TEAM+AviX+%7C+SIH+2026;Adaptive+Path+Planning;Collision+Avoidance+for+Indian+Roads" alt="Animated AviX title" />
 
 ### Adaptive Path Planning & Collision Avoidance on Unstructured Indian Roads
 
 **Smart India Hackathon 2026 · Problem Statement SIH26037**
 
-[![MATLAB](https://img.shields.io/badge/MATLAB-Simulation-orange?logo=mathworks)](https://www.mathworks.com/products/matlab.html)
-[![Simulink](https://img.shields.io/badge/Simulink-Control-blue?logo=mathworks)](https://www.mathworks.com/products/simulink.html)
-[![RoadRunner](https://img.shields.io/badge/RoadRunner-Scenario%20Design-1464A5)](https://www.mathworks.com/products/roadrunner.html)
-[![Status](https://img.shields.io/badge/Status-In%20Development-8A2BE2)](#)
+![MATLAB](https://img.shields.io/badge/MATLAB-Simulation-orange?logo=mathworks)
+![Simulink](https://img.shields.io/badge/Simulink-Control-blue?logo=mathworks)
+![RoadRunner](https://img.shields.io/badge/RoadRunner-Scenario%20Design-1464A5)
+![Project Status](https://img.shields.io/badge/Status-In%20Development-8A2BE2)
 
 </div>
 
@@ -18,71 +18,9 @@
 
 ## 🚘 About AviX
 
-**AviX** is a simulation-driven autonomous-driving project focused on safer navigation through the complexity of Indian roads—where lane markings may be missing, traffic is mixed, and road users can move unpredictably.
+**AviX** is a simulation-driven autonomous-driving project designed to explore safer navigation on unstructured Indian roads, where lane markings may be missing and traffic participants move unpredictably.
 
-Our approach combines **environment perception, motion prediction, collision-risk assessment, adaptive trajectory planning, and closed-loop vehicle control**.
-
-## ⚙️ How It Works
-
-`Road Scenario` → `Perception & Sensor Fusion` → `Motion Prediction` → `Risk Assessment` → `Adaptive Path Planning` → `Steering / Acceleration / Braking` → `Closed-Loop Replanning`
-
-- **Adapt to the road:** use lane-aware planning when markings are reliable and drivable-space planning when they are not.
-- **Anticipate mixed traffic:** consider cars, buses, trucks, two-wheelers, auto-rickshaws, bicycles, pedestrians, and animals.
-- **React to changing risk:** maintain speed, slow down, yield, brake, or re-plan when required.
-- **Validate in simulation:** test scenarios repeatedly and assess behaviour using measurable metrics.
-
-## 🧰 Technology Stack
-
-| Technology | Purpose |
-|---|---|
-| MATLAB | Algorithm development and analysis |
-| Simulink | Vehicle control and closed-loop simulation |
-| RoadRunner | Indian road and traffic scenario design |
-| Automated Driving Toolbox | Driving scenarios and autonomy workflows |
-| Stateflow | Supervisory decision and behaviour logic |
-| Git & GitHub | Version control and collaboration |
-
-*Toolbox use and capabilities are being integrated and validated as development progresses.*
-
-## 🎬 Project Gallery
-
-### Adaptive Path Planning
-![Adaptive path planning of the ego vehicle](media/Images/Adaptive_path_planing_of_ego_vehicle.png)
-
-### Risk Assessment
-![Risk assessment of the ego vehicle](media/Images/Risk_assesment_of_ego_vehicle.png)
-
-### Kinematic Bicycle Control
-![Kinematic bicycle control graph](media/Images/Kinematic_Bicycle_control_graph_of_ego_vehicle.png)
-
-### Indian Road Scenario
-![Highway intersection scenario](media/Images/Highway_intersection.jpeg)
-
-## ▶️ Demo Videos
-
-Watch the current project demonstrations:
-
-- [AviX GUI](media/Video/AviX%20GUI%20New.mp4)
-- [Dynamic Report Generation](media/Video/Dynamic%20Report%20Generation.mp4)
-- [Ego Vehicle — Adaptive Path Planning](media/Video/Front_view_Ego_vehicle_with_adaptive_path_planing.mp4)
-- [Indian Road Scenario — Driving Scenario Designer](media/Video/Indian_Road_on_Driving%20Scenario%20Designer_Simulation.mp4)
-- [Urban Highway Merge](media/Video/Urban_Highway_Merge.mp4)
-
-> GitHub may show video files as downloadable assets rather than playing them inline.
-
-## 📁 Repository Structure
-
-```text
-SIH26037_Adaptive_Path_Planning_Collision_Avoidance/
-├── docs/                 # Project business report and documentation
-├── matlab/               # MATLAB GUI, planning and simulation scripts
-├── roadrunner/            # Road/scenario demonstration assets
-├── media/
-│   ├── Images/            # Simulation screenshots and visual results
-│   └── Video/             # Project demonstration videos
-├── results/               # Generated reports and result videos
-└── README.md
-```
+The project brings together **road-scene simulation, motion prediction, collision-risk assessment, adaptive trajectory planning, and closed-loop vehicle control** using the MathWorks ecosystem.
 
 ## 👥 Team AviX
 
@@ -95,23 +33,108 @@ SIH26037_Adaptive_Path_Planning_Collision_Avoidance/
 | 5 | Aakanksha Sutrave |
 | 6 | Sagar Sahu |
 
-## 🎯 Current Focus
+## 🌆 Indian Road Simulation
 
-- Develop robust planning for unstructured roads and mixed traffic.
-- Improve reaction to dynamic obstacles and uncertain agent motion.
-- Test repeatable village-road and urban-junction scenarios.
-- Evaluate safety and responsiveness using documented simulation metrics.
+<p align="center">
+  <img src="media/Images/Highway_intersection.jpeg" alt="AviX Indian road simulation showing mixed traffic at an intersection" width="95%" />
+</p>
 
-## ⚠️ Project Note
+<p align="center"><em>Simulated Indian-road environment featuring mixed traffic and complex intersection movement.</em></p>
 
-AviX is a **simulation and prototyping project** for SIH 2026. Simulation demonstrations are not, by themselves, evidence of real-world vehicle readiness or safety.
+## ⚙️ Core Capabilities
 
----
+<table>
+<tr>
+<td width="50%">
+
+### 🛣️ Adaptive Planning
+Select lane-aware planning where markings are reliable, or estimate drivable space when lanes are unclear.
+
+</td>
+<td width="50%">
+
+### 👁️ Traffic Awareness
+Consider surrounding vehicles and vulnerable road users when evaluating possible movement.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### ⚠️ Risk Assessment
+Evaluate separation, relative motion, predicted trajectories, and collision risk.
+
+</td>
+<td width="50%">
+
+### 🔁 Closed-Loop Response
+Update steering, acceleration, or braking decisions as the simulated environment changes.
+
+</td>
+</tr>
+</table>
+
+## 🧰 Technology Stack
+
+| Tool | Role |
+|---|---|
+| **MATLAB** | Algorithm development and analysis |
+| **Simulink** | Vehicle dynamics and closed-loop control |
+| **RoadRunner** | Road and scenario authoring |
+| **Automated Driving Toolbox** | Driving scenarios and autonomy workflows |
+| **Stateflow** | Supervisory decision logic |
+| **Git & GitHub** | Version control and collaboration |
+
+## 🎬 Project Demonstrations
+
+Open the videos below to view current prototype demonstrations. GitHub may open MP4 files as downloadable media rather than playing them directly in the README.
+
+| Demonstration | Video |
+|---|---|
+| AviX GUI | [▶ Watch demo](media/Video/AviX%20GUI%20New.mp4) |
+| Dynamic Report Generation | [▶ Watch demo](media/Video/Dynamic%20Report%20Generation.mp4) |
+| Ego Vehicle Adaptive Path Planning | [▶ Watch demo](media/Video/Front_view_Ego_vehicle_with_adaptive_path_planing.mp4) |
+| Indian Road Scenario | [▶ Watch demo](media/Video/Indian_Road_on_Driving%20Scenario%20Designer_Simulation.mp4) |
+| Urban Highway Merge | [▶ Watch demo](media/Video/Urban_Highway_Merge.mp4) |
+
+## 📁 Repository Map
+
+```text
+SIH26037_Adaptive_Path_Planning_Collision_Avoidance/
+├── docs/        # Project documentation and business report
+├── matlab/      # MATLAB GUI, planning and simulation scripts
+├── roadrunner/  # Road/scenario demonstration assets
+├── media/
+│   ├── Images/  # Simulation images
+│   └── Video/   # Demo recordings
+├── results/     # Generated reports and result videos
+└── README.md
+```
+
+## 🧭 Architecture Flow
+
+The intended system pipeline is illustrated below. Individual modules and performance are being developed and validated iteratively.
+
+```mermaid
+flowchart TD
+    A["Indian Road Scenario<br/>RoadRunner"] --> B["Environment & Sensor Observations"]
+    B --> C["Perception / Object Tracking"]
+    C --> D["Motion Prediction<br/>Possible trajectories + uncertainty"]
+    D --> E["Collision-Risk Assessment"]
+    E --> F{"Is current path safe?"}
+    F -- "Yes" --> G["Vehicle Control<br/>Steering • Acceleration • Braking"]
+    F -- "No" --> H["Adaptive Replanning<br/>Slow • Yield • Brake • Reroute"]
+    H --> G
+    G --> I["Vehicle Dynamics<br/>Simulink"]
+    I --> J["Updated Road Scene"]
+    J --> B
+```
 
 <div align="center">
 
-**Built by Team AviX for Smart India Hackathon 2026**
+**SEE → PREDICT → ASSESS RISK → PLAN → ACT → RECHECK**
 
-<sub>Engineering safer decisions for the roads we actually drive on.</sub>
+<sub>Built by Team AviX for Smart India Hackathon 2026.</sub><br/>
+<sub>Simulation prototype only; results do not establish real-world vehicle safety or road readiness.</sub>
 
 </div>
